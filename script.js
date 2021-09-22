@@ -4,6 +4,14 @@ function draw() {
     
     var drawResult = Math.round(Math.random() * drawMax)
 
-    document.getElementById('drawResult').innerHTML = drawResult
+    if (!isNaN(drawMax)){
+
+        document.getElementById('drawResult').innerHTML = drawResult 
+    }
+
+    else {
+        
+        return alert("Desculpe, mas " + drawMax + " não é um numero. :/")
+    }
 
 }
